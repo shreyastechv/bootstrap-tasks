@@ -24,30 +24,36 @@
 					</select>
 
 					<h4 class="mt-5">Date Select</h4>
-					<label for="date">Select Date: </label>
+					<label for="datepicker">Select Date: </label>
 					<input class="ms-2" id="datepicker" type="text" value="2024-10-21">
 				</div>
 				<button type="submit" class="btn btn-primary">Submit</button>
 			</form>
 			<div class="mt-5">
 				<h4>Nested Lists</h4>
-				<ul>
-					<li>Coffee</li>
-					<li>Tea
-						<ul>
-							<li>
-								<li>Black tea</li>
-								<ul>
-									<li>Assam Tea</li>
-									<li>English Breakfast</li>
-									<li>Darjeeling Tea</li>
-								</ul>
-							</li>
-							<li>Green tea</li>
-						</ul>
-					</li>
-					<li>Milk</li>
-				</ul>
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Choose a Drink
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#coffee">Coffee</a></li>
+						<li>
+							<a class="dropdown-item" href="#tea">Tea &raquo;</a>
+							<ul class="dropdown-menu dropdown-submenu">
+								<li>
+									<a class="dropdown-item" href="#black-tea">Black tea &raquo;</a>
+									<ul class="dropdown-menu dropdown-submenu">
+										<li><a class="dropdown-item" href="#assam-tea">Assam Tea</a></li>
+										<li><a class="dropdown-item" href="#english-breakfast">English Breakfast</a></li>
+										<li><a class="dropdown-item" href="#darjeeling-tea">Darjeeling Tea</a></li>
+									</ul>
+								</li>
+								<li><a class="dropdown-item" href="#green-tea">Green tea</a></li>
+							</ul>
+						</li>
+						<li><a class="dropdown-item" href="#milk">Milk</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<script src="./js/bootstrap.bundle.min.js"></script>
