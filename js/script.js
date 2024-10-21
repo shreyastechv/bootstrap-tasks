@@ -1,6 +1,4 @@
-$( function() {
-	$( "#accordion" ).accordion({
-		collapsible: true,
-		active: false
-	});
+$(document).ready(function() {
+	console.log("Hi");
+	$("#datepicker").datepicker();
 });
