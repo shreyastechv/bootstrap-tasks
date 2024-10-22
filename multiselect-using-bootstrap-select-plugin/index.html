@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bootstrap tasks</title>
+		<link href="./css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.8.1/css/bootstrap-select.css">
+		<link href="./css/styles.css" rel="stylesheet">
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/jquery-ui.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<form class="mt-3">
+				<div class="mb-3">
+					<h4>Multi Select</h4>
+					<select class="selectpicker" multiple aria-label="multiple select example">
+						<option value="1">Item One</option>
+						<option value="2">Item Two</option>
+						<option value="3">Item Three</option>
+					</select>
+
+					<h4 class="mt-5">Date Select</h4>
+					<label for="datepicker">Select Date: </label>
+					<input class="ms-2" id="datepicker" type="text" value="2024-10-21" required>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+			<div class="mt-5">
+				<h4>Nested Lists</h4>
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Choose a Drink
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#coffee">Coffee</a></li>
+						<li>
+							<a class="dropdown-item" href="#tea">Tea &raquo;</a>
+							<ul class="dropdown-menu dropdown-submenu">
+								<li>
+									<a class="dropdown-item" href="#black-tea">Black tea &raquo;</a>
+									<ul class="dropdown-menu dropdown-submenu">
+										<li><a class="dropdown-item" href="#assam-tea">Assam Tea</a></li>
+										<li><a class="dropdown-item" href="#english-breakfast">English Breakfast</a></li>
+										<li><a class="dropdown-item" href="#darjeeling-tea">Darjeeling Tea</a></li>
+									</ul>
+								</li>
+								<li><a class="dropdown-item" href="#green-tea">Green tea</a></li>
+							</ul>
+						</li>
+						<li><a class="dropdown-item" href="#milk">Milk</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.8.1/js/bootstrap-select.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="./js/bootstrap.bundle.min.js"></script>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
